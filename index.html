@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Interactive Digital Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <!-- Optional animation libs -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Interactive Digital Portfolio</title>
+<link rel="stylesheet" href="style.css" />
+<script defer src="script.js"></script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <nav>
+    <ul class="nav-tabs">
+      <li class="nav-item active" data-target="about">About Me</li>
+      <li class="nav-item" data-target="skills">Skills</li>
+      <li class="nav-item" data-target="projects">Projects</li>
+      <li class="nav-item" data-target="contact">Contact</li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="about">
+<main>
+  <section id="about" class="tab-content active">
     <h1>About Me</h1>
     <p>Write a short introduction about yourself here.</p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="tab-content">
     <h2>Skills</h2>
-    <ul>
+    <ul class="skills-list">
       <li>HTML</li>
       <li>CSS</li>
       <li>JavaScript</li>
@@ -35,23 +35,21 @@
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="tab-content">
     <h2>Projects</h2>
     <div class="project-list">
-      <!-- Example project -->
       <div class="project-item">
         <h3>Project Name</h3>
         <p>Short description of the project.</p>
-        <a href="#">View More</a>
+        <a href="#" target="_blank" rel="noopener">View More</a>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="tab-content">
     <h2>Contact</h2>
     <p>Email: your.email@example.com</p>
   </section>
-
-  <script src="script.js"></script>
+</main>
 </body>
 </html>
