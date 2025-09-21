@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Digital Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Optional animation libs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
 </head>
 <body>
-  <!-- Navbar -->
   <header>
     <nav>
-      <h2 class="logo">MyPortfolio</h2>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -21,47 +20,36 @@
     </nav>
   </header>
 
- <!-- Home -->
-<section id="home" class="section hero">
-  <h1>Hello, I’m <span>Your Name</span> 👋</h1>
-  <p id="typed-text"></p>
-  <a href="resume.pdf" class="btn" download>Download Resume</a>
-  <button id="dark-toggle">🌙 Toggle Dark Mode</button>
-</section>
-
-
-  <!-- About -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>Write a short introduction about your education, interests, and goals.</p>
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Write a short introduction about yourself here.</p>
   </section>
 
-  <!-- Skills -->
-  <section id="skills" class="section">
+  <section id="skills">
     <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML5</li>
-      <li>CSS3</li>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
       <li>JavaScript</li>
+      <!-- Add more skills -->
     </ul>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="section">
+  <section id="projects">
     <h2>Projects</h2>
-    <div class="project-card">
-      <h3>Portfolio Website</h3>
-      <p>A personal portfolio showcasing my work and skills.</p>
-      <a href="#">View Project</a>
+    <div class="project-list">
+      <!-- Example project -->
+      <div class="project-item">
+        <h3>Project Name</h3>
+        <p>Short description of the project.</p>
+        <a href="#">View More</a>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="section">
+  <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourusername" target="_blank">linkedin.com/in/yourusername</a></p>
+    <p>Email: your.email@example.com</p>
   </section>
 
   <script src="script.js"></script>
